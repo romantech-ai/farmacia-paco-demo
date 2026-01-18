@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Francisco Tejado | Tu farmacia de confianza en Tomelloso</title>
+    <meta name="description" content="Farmacia Francisco Tejado en Tomelloso. 5 años cuidando de ti. Asistente IA 24/7, sistema de recordatorios y atención personalizada. ☎ 926 511 079">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Farmacia Francisco Tejado | Tomelloso">
+    <meta property="og:description" content="Tu farmacia de confianza con asistente IA 24/7 y sistema de recordatorios de medicación.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Paleta extraída de farmaciatejado.com - Verde farmacia
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        // Accent - Azul farmacéutico
+                        accent: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Pharmacy",
+        "name": "Farmacia Francisco Tejado",
+        "description": "Farmacia de confianza en Tomelloso con 5 años de experiencia",
+        "url": "https://www.farmaciatejado.com",
+        "telephone": "+34926511079",
+        "email": "contacto@farmaciatejado.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle Concordia 41",
+            "addressLocality": "Tomelloso",
+            "postalCode": "13700",
+            "addressRegion": "Ciudad Real",
+            "addressCountry": "ES"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:30",
+                "closes": "21:30"
+            }
+        ],
+        "sameAs": ["https://www.facebook.com/farmaciatejado"]
+    }
+    </script>
+
+    <style>
+        /* Animaciones Premium */
+        @keyframes float { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-15px) rotate(2deg); } }
+        @keyframes float-delayed { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-12px) rotate(-2deg); } }
+        @keyframes pulse-ring { 0% { transform: scale(0.95); opacity: 1; } 100% { transform: scale(1.3); opacity: 0; } }
+        @keyframes fade-in-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slide-in-right { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes scale-in { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes gradient-shift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+        @keyframes text-shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+        @keyframes bounce-subtle { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-float-delayed { animation: float-delayed 7s ease-in-out infinite 0.5s; }
+        .animate-pulse-ring { animation: pulse-ring 2s ease-out infinite; }
+        .animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; opacity: 0; }
+        .animate-slide-in-right { animation: slide-in-right 0.8s ease-out forwards; opacity: 0; }
+        .animate-scale-in { animation: scale-in 0.6s ease-out forwards; opacity: 0; }
+        .animate-gradient { animation: gradient-shift 8s ease infinite; background-size: 200% 200%; }
+        .animate-bounce-subtle { animation: bounce-subtle 2s ease-in-out infinite; }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+
+        /* Glassmorphism Premium */
+        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); }
+        .glass-dark { background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+
+        /* Gradient Text Premium */
+        .gradient-text {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #4ade80 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-text-shimmer {
+            background: linear-gradient(90deg, #16a34a, #4ade80, #16a34a);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: text-shimmer 3s linear infinite;
+        }
+
+        /* Sombras Premium */
+        .shadow-soft { box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 12px 40px -4px rgba(0, 0, 0, 0.08); }
+        .shadow-glow { box-shadow: 0 0 40px rgba(22, 163, 74, 0.15); }
+        .shadow-glow-accent { box-shadow: 0 0 40px rgba(37, 99, 235, 0.15); }
+
+        /* Hover Effects Premium */
+        .hover-lift { transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease; }
+        .hover-lift:hover { transform: translateY(-8px); }
+
+        .hover-scale { transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .hover-scale:hover { transform: scale(1.02); }
+
+        /* Bordes Premium */
+        .border-gradient { border: 2px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #16a34a, #4ade80) border-box; }
+
+        /* Demo Badge */
+        .demo-badge {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            z-index: 100;
+            background: linear-gradient(135deg, #16a34a, #22c55e);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 13px;
+            box-shadow: 0 8px 30px rgba(22, 163, 74, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .demo-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Chat Widget Premium */
+        .chat-widget {
+            position: fixed;
+            bottom: 100px;
+            right: 24px;
+            width: 400px;
+            max-height: 550px;
+            border-radius: 28px;
+            box-shadow: 0 25px 80px -12px rgba(0, 0, 0, 0.35);
+            overflow: hidden;
+            transform: scale(0.9) translateY(20px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .chat-widget.active {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        /* Scroll Reveal */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #16a34a, #22c55e); border-radius: 4px; }
+
+        /* Línea decorativa */
+        .line-decoration::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #16a34a, #4ade80);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white overflow-x-hidden">
+
+    <!-- Demo Badge -->
+    <div class="demo-badge">
+        PROPUESTA PREMIUM - Farmacia Tejado
+    </div>
+
+    <!-- Navigation Premium -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass shadow-soft transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="logo.png" alt="Farmacia Francisco Tejado" class="h-14 w-auto">
+                    <div class="hidden sm:block">
+                        <span class="text-xl font-bold text-gray-900">Farmacia</span>
+                        <span class="text-xl font-bold gradient-text"> Francisco Tejado</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#nosotros" class="relative text-gray-600 hover:text-primary-600 font-medium transition-colors group">
+                        Nosotros
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#servicios" class="relative text-gray-600 hover:text-primary-600 font-medium transition-colors group">
+                        Servicios
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#ia" class="relative text-gray-600 hover:text-primary-600 font-medium transition-colors group">
+                        Asistente IA
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#recordatorios" class="relative text-gray-600 hover:text-primary-600 font-medium transition-colors group">
+                        Recordatorios
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#contacto" class="relative text-gray-600 hover:text-primary-600 font-medium transition-colors group">
+                        Contacto
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                </div>
+
+                <!-- CTA -->
+                <div class="hidden lg:flex items-center gap-5">
+                    <a href="tel:+34926511079" class="flex items-center gap-2 text-gray-600 hover:text-primary-600 transition-colors">
+                        <div class="w-10 h-10 bg-primary-50 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <span class="font-semibold">926 511 079</span>
+                    </a>
+                    <button class="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-7 py-3 rounded-full font-semibold shadow-lg shadow-primary-500/30 hover:shadow-primary-500/50 hover:scale-105 transition-all duration-300">
+                        Contactar
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="lg:hidden p-2 hover:bg-gray-100 rounded-xl transition-colors" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Premium -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Gradient Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50"></div>
+
+        <!-- Animated Orbs -->
+        <div class="absolute top-20 right-10 w-96 h-96 bg-gradient-to-br from-primary-200/40 to-primary-300/30 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 left-0 w-[500px] h-[500px] bg-gradient-to-br from-accent-200/30 to-accent-300/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary-100/20 to-transparent rounded-full"></div>
+
+        <!-- Grid Pattern Overlay -->
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><line x1=%220%22 y1=%220%22 x2=%22100%22 y2=%220%22 stroke=%22%23000%22 stroke-width=%220.5%22/><line x1=%220%22 y1=%220%22 x2=%220%22 y2=%22100%22 stroke=%22%23000%22 stroke-width=%220.5%22/></svg>'); background-size: 50px 50px;"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="max-w-2xl">
+                    <!-- Badge Premium -->
+                    <div class="animate-fade-in-up">
+                        <span class="inline-flex items-center gap-3 px-5 py-2.5 bg-white/80 backdrop-blur border border-primary-200 text-primary-700 rounded-full text-sm font-semibold mb-8 shadow-soft">
+                            <span class="flex h-2.5 w-2.5 relative">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-500"></span>
+                            </span>
+                            Tu farmacia de confianza en Tomelloso
+                        </span>
+                    </div>
+
+                    <!-- Title Premium -->
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] mb-8 animate-fade-in-up delay-100">
+                        Cuidamos de ti
+                        <span class="block gradient-text-shimmer">con tecnología</span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed animate-fade-in-up delay-200">
+                        <strong class="text-gray-900">5 años</strong> a tu lado. Ahora con
+                        <strong class="text-primary-600">asistente IA 24/7</strong> y sistema de
+                        <strong class="text-accent-600">recordatorios inteligentes</strong>.
+                    </p>
+
+                    <!-- CTAs Premium -->
+                    <div class="flex flex-wrap gap-4 animate-fade-in-up delay-300">
+                        <button onclick="toggleChat()" class="group bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary-500/30 hover:shadow-primary-500/50 hover:scale-105 transition-all duration-300 flex items-center gap-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            Probar Asistente IA
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </button>
+                        <a href="#servicios" class="px-8 py-4 rounded-full font-bold text-lg border-2 border-gray-200 text-gray-700 hover:border-primary-500 hover:text-primary-600 hover:bg-primary-50 transition-all duration-300">
+                            Ver Servicios
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators Premium -->
+                    <div class="mt-14 flex flex-wrap items-center gap-10 animate-fade-in-up delay-400">
+                        <div class="flex items-center gap-4">
+                            <div class="flex -space-x-3">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary-300 to-primary-400 border-3 border-white shadow-lg flex items-center justify-center text-white font-bold text-sm">JM</div>
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent-300 to-accent-400 border-3 border-white shadow-lg flex items-center justify-center text-white font-bold text-sm">AR</div>
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-300 to-orange-400 border-3 border-white shadow-lg flex items-center justify-center text-white font-bold text-sm">MC</div>
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-300 to-purple-400 border-3 border-white shadow-lg flex items-center justify-center text-white font-bold text-sm">+</div>
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-gray-900">+5,000</p>
+                                <p class="text-sm text-gray-500">clientes confían en nosotros</p>
+                            </div>
+                        </div>
+
+                        <div class="h-12 w-px bg-gray-200 hidden sm:block"></div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex">
+                                <span class="text-yellow-400 text-2xl">★</span>
+                                <span class="text-yellow-400 text-2xl">★</span>
+                                <span class="text-yellow-400 text-2xl">★</span>
+                                <span class="text-yellow-400 text-2xl">★</span>
+                                <span class="text-yellow-400 text-2xl">★</span>
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-gray-900">4.9/5</p>
+                                <p class="text-sm text-gray-500">en Google Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Premium -->
+                <div class="relative hidden lg:block animate-slide-in-right delay-200">
+                    <div class="relative w-full aspect-square">
+                        <!-- Decorative rings -->
+                        <div class="absolute inset-0 border-2 border-primary-200/50 rounded-full scale-110 animate-pulse"></div>
+                        <div class="absolute inset-0 border border-primary-100/30 rounded-full scale-125"></div>
+
+                        <!-- Main Visual -->
+                        <div class="w-full h-full rounded-[3rem] overflow-hidden shadow-2xl">
+                            <img src="farmacia fuera.png" alt="Fachada de Farmacia Francisco Tejado en Tomelloso" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Floating Card 1 - AI -->
+                        <div class="absolute -left-8 top-1/4 bg-white p-5 rounded-2xl shadow-2xl animate-float border border-gray-100">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-900">Asistente IA</p>
+                                    <p class="text-sm text-primary-600 font-medium flex items-center gap-1">
+                                        <span class="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
+                                        Activo 24/7
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Card 2 - Reminder -->
+                        <div class="absolute -right-4 bottom-1/3 bg-white p-5 rounded-2xl shadow-2xl animate-float-delayed border border-gray-100">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-900">Recordatorio</p>
+                                    <p class="text-sm text-gray-500">Omeprazol - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Card 3 - Stock -->
+                        <div class="absolute left-1/4 -bottom-4 bg-white p-5 rounded-2xl shadow-2xl animate-float border border-gray-100" style="animation-delay: 0.8s;">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-900">Alerta Stock</p>
+                                    <p class="text-sm text-orange-600 font-medium">Quedan 5 días</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce-subtle">
+            <div class="w-7 h-12 border-2 border-gray-300 rounded-full flex justify-center pt-2">
+                <div class="w-1.5 h-3 bg-gray-400 rounded-full animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="py-28 lg:py-36 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-primary-100/30 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Image -->
+                <div class="reveal">
+                    <div class="relative">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="paco atendiendo.png" alt="Paco Tejado atendiendo en la farmacia" class="w-full h-auto object-cover">
+                        </div>
+                        <!-- Floating badge -->
+                        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center">
+                                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-900 text-lg">Escucha activa</p>
+                                    <p class="text-gray-500 text-sm">Atención personalizada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="reveal" style="animation-delay: 0.2s;">
+                    <span class="inline-block px-5 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-6">
+                        Quiénes Somos
+                    </span>
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">
+                        Tu salud es <span class="gradient-text">nuestra prioridad</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Atendemos todas tus necesidades en medicamentos y parafarmacia con recomendaciones personalizadas
+                        gracias a nuestra formación específica y experiencia.
+                    </p>
+
+                    <!-- Values -->
+                    <div class="space-y-6">
+                        <div class="flex gap-5 p-5 bg-gray-50 rounded-2xl hover:bg-primary-50 transition-colors">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Confianza</h4>
+                                <p class="text-gray-600 text-sm">Escucha activa y relación cercana con cada cliente</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-5 bg-gray-50 rounded-2xl hover:bg-accent-50 transition-colors">
+                            <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Innovación</h4>
+                                <p class="text-gray-600 text-sm">Nuevos productos y diagnósticos de vanguardia</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-5 bg-gray-50 rounded-2xl hover:bg-purple-50 transition-colors">
+                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Compromiso</h4>
+                                <p class="text-gray-600 text-sm">Implicados al 100% con tu salud integral</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section Premium -->
+    <section id="servicios" class="py-28 lg:py-36 bg-gradient-to-b from-gray-50/80 to-white relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary-100/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <!-- Header Premium -->
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span class="inline-block px-5 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-6">
+                    Nuestros Servicios
+                </span>
+                <h2 class="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-6">
+                    Todo para tu <span class="gradient-text">bienestar</span>
+                </h2>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Medicamentos, parafarmacia y atención personalizada por farmacéuticos y técnicos cualificados
+                </p>
+            </div>
+
+            <!-- Services Grid Premium -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 - Farmacia Tradicional -->
+                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-2xl hover-lift cursor-pointer border border-gray-100 hover:border-primary-200 transition-all duration-500 reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-primary-500 group-hover:to-primary-600 transition-all duration-500">
+                        <svg class="w-8 h-8 text-primary-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">Farmacia Tradicional</h3>
+                    <p class="text-gray-600 mb-5 leading-relaxed">Todos los medicamentos que la sanidad pública ofrece, con y sin prescripción médica.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-primary-500 rounded-full"></span>
+                            Consejo farmacéutico personalizado
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-primary-500 rounded-full"></span>
+                            Cumplimiento normativas sanitarias
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 - Salud Infantil -->
+                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-2xl hover-lift cursor-pointer border border-gray-100 hover:border-orange-200 transition-all duration-500 reveal" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-orange-500 group-hover:to-orange-600 transition-all duration-500">
+                        <svg class="w-8 h-8 text-orange-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">Salud Infantil / Bebés</h3>
+                    <p class="text-gray-600 mb-5 leading-relaxed">Todo para el mundo infantil: lactancia, cuidado y alimentación.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
+                            Biberones, pañales, chupetes
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
+                            Leches, papillas, potitos
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 - Tratamientos e Higiene -->
+                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-2xl hover-lift cursor-pointer border border-gray-100 hover:border-rose-200 transition-all duration-500 reveal" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-rose-100 to-rose-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-rose-500 group-hover:to-rose-600 transition-all duration-500">
+                        <svg class="w-8 h-8 text-rose-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-rose-600 transition-colors">Tratamientos e Higiene</h3>
+                    <p class="text-gray-600 mb-5 leading-relaxed">Amplio catálogo de primeros auxilios, antipiojos y productos cosméticos.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-rose-500 rounded-full"></span>
+                            Gasas, vendas, tiritas, yodo
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-rose-500 rounded-full"></span>
+                            Cremas, lociones, desmaquillantes
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 - Pruebas y Control -->
+                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-2xl hover-lift cursor-pointer border border-gray-100 hover:border-teal-200 transition-all duration-500 reveal" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-teal-100 to-teal-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-teal-500 group-hover:to-teal-600 transition-all duration-500">
+                        <svg class="w-8 h-8 text-teal-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">Pruebas y Control</h3>
+                    <p class="text-gray-600 mb-5 leading-relaxed">Seguimiento de parámetros de salud para nuestros clientes.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span>
+                            Peso, altura, masa corporal
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span>
+                            Tensión, glucosa, glucemia
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 - Alimentación y Nutrición -->
+                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-2xl hover-lift cursor-pointer border border-gray-100 hover:border-accent-200 transition-all duration-500 reveal" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent-100 to-accent-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-accent-500 group-hover:to-accent-600 transition-all duration-500">
+                        <svg class="w-8 h-8 text-accent-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-accent-600 transition-colors">Alimentación y Nutrición</h3>
+                    <p class="text-gray-600 mb-5 leading-relaxed">Gran variedad de complementos, dietética y tratamientos naturales.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span>
+                            Vitaminas, probióticos
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-accent-500 rounded-full"></span>
+                            Adelgazantes, suplementos
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 - Parafarmacia -->
+                <div class="group bg-white rounded-3xl p-8 shadow-soft hover:shadow-2xl hover-lift cursor-pointer border border-gray-100 hover:border-purple-200 transition-all duration-500 reveal" style="animation-delay: 0.5s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-purple-500 group-hover:to-purple-600 transition-all duration-500">
+                        <svg class="w-8 h-8 text-purple-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">Parafarmacia</h3>
+                    <p class="text-gray-600 mb-5 leading-relaxed">Productos de gran calidad para cuidar tu salud: belleza, homeopatía y más.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                            Higiene personal, belleza
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-gray-500">
+                            <span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
+                            Homeopatía, dietética
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Section Premium -->
+    <section id="ia" class="py-28 lg:py-36 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white relative overflow-hidden">
+        <!-- Background decorations -->
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22none%22 stroke=%22white%22 stroke-width=%220.3%22/></svg>'); background-size: 80px 80px;"></div>
+        <div class="absolute top-20 right-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-20 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <!-- Content -->
+                <div class="reveal">
+                    <span class="inline-block px-5 py-2 bg-white/10 backdrop-blur rounded-full text-sm font-semibold mb-6 border border-white/20">
+                        Inteligencia Artificial
+                    </span>
+                    <h2 class="text-4xl lg:text-6xl font-extrabold mb-8 leading-tight">
+                        Tu farmacéutico virtual, <span class="text-primary-200">siempre disponible</span>
+                    </h2>
+                    <p class="text-xl text-primary-100 mb-10 leading-relaxed">
+                        Nuestro asistente con IA responde tus dudas sobre medicamentos, disponibilidad,
+                        horarios y te permite hacer reservas. A cualquier hora, cualquier día.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0 border border-white/10">
+                                <svg class="w-6 h-6 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Consultas sobre medicamentos</h4>
+                                <p class="text-primary-200">Posología, efectos secundarios, interacciones y más</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0 border border-white/10">
+                                <svg class="w-6 h-6 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Stock en tiempo real</h4>
+                                <p class="text-primary-200">Consulta disponibilidad antes de venir a la farmacia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0 border border-white/10">
+                                <svg class="w-6 h-6 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Reserva de productos</h4>
+                                <p class="text-primary-200">Haz tu pedido por chat y recógelo sin esperas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleChat()" class="bg-white text-primary-600 px-8 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-primary-50 hover:scale-105 transition-all duration-300 flex items-center gap-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                        Probar el Asistente
+                    </button>
+                </div>
+
+                <!-- Chat Demo Premium -->
+                <div class="relative reveal" style="animation-delay: 0.2s;">
+                    <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden max-w-md mx-auto border-4 border-white/20">
+                        <!-- Chat header -->
+                        <div class="bg-gradient-to-r from-primary-600 to-primary-700 p-5 flex items-center gap-4">
+                            <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center">
+                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-white text-lg">Asistente Farmacia Tejado</p>
+                                <p class="text-sm text-primary-200 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                                    En línea
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Messages -->
+                        <div class="p-5 space-y-4 bg-gray-50 min-h-[320px]">
+                            <div class="flex gap-3">
+                                <div class="w-9 h-9 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm max-w-[85%]">
+                                    <p class="text-gray-700">¡Hola! Soy el asistente de Farmacia Francisco Tejado. ¿En qué puedo ayudarte?</p>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-end">
+                                <div class="bg-primary-600 text-white rounded-2xl rounded-tr-none p-4 max-w-[85%]">
+                                    <p>¿Tenéis ibuprofeno 600 disponible?</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-3">
+                                <div class="w-9 h-9 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm max-w-[85%]">
+                                    <p class="text-gray-700 mb-3">Sí, tenemos <strong>Ibuprofeno 600mg</strong> en stock.</p>
+                                    <div class="bg-gradient-to-r from-green-50 to-primary-50 rounded-xl p-4 border border-primary-100">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <span class="text-primary-700 font-bold">✓ Disponible</span>
+                                            <span class="text-sm text-gray-500">Actualizado hace 2 min</span>
+                                        </div>
+                                        <p class="text-primary-600 font-semibold text-lg">45 unidades · 2,95€</p>
+                                    </div>
+                                    <p class="text-gray-600 text-sm mt-3">¿Quieres que te lo reserve?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Input -->
+                        <div class="p-4 border-t bg-white">
+                            <div class="flex gap-3">
+                                <input type="text" placeholder="Escribe tu mensaje..." class="flex-1 px-5 py-3 bg-gray-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition-all">
+                                <button class="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center text-white hover:shadow-lg transition-all">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reminders Section Premium -->
+    <section id="recordatorios" class="py-28 lg:py-36 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-accent-100/50 rounded-full blur-3xl -translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <!-- Phone Mockup Premium -->
+                <div class="relative order-2 lg:order-1 reveal">
+                    <div class="max-w-sm mx-auto">
+                        <!-- Phone Frame -->
+                        <div class="bg-gray-900 rounded-[3.5rem] p-4 shadow-2xl">
+                            <div class="bg-white rounded-[3rem] overflow-hidden">
+                                <!-- Status bar -->
+                                <div class="bg-gray-50 px-8 py-3 flex justify-between items-center text-xs text-gray-600 font-medium">
+                                    <span>9:41</span>
+                                    <div class="flex gap-1.5 items-center">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M2 22h20V2z"/></svg>
+                                        <div class="w-7 h-3 bg-gray-900 rounded-sm"></div>
+                                    </div>
+                                </div>
+
+                                <!-- App content -->
+                                <div class="p-6 min-h-[500px] bg-gradient-to-b from-gray-50 to-white">
+                                    <div class="flex items-center justify-between mb-6">
+                                        <h3 class="text-xl font-bold text-gray-900">Mis recordatorios</h3>
+                                        <span class="text-sm text-primary-600 font-semibold">Hoy</span>
+                                    </div>
+
+                                    <!-- Reminder cards -->
+                                    <div class="space-y-4">
+                                        <div class="bg-gradient-to-r from-green-50 to-primary-50 border border-green-200 rounded-2xl p-4">
+                                            <div class="flex items-center justify-between mb-2">
+                                                <span class="text-primary-700 font-bold">08:00</span>
+                                                <span class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full flex items-center gap-1">
+                                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                                    Completado
+                                                </span>
+                                            </div>
+                                            <p class="font-bold text-gray-900">Metformina 850mg</p>
+                                            <p class="text-sm text-gray-500">1 comprimido con el desayuno</p>
+                                        </div>
+
+                                        <div class="bg-gradient-to-r from-blue-50 to-accent-50 border-2 border-accent-300 rounded-2xl p-4 shadow-lg">
+                                            <div class="flex items-center justify-between mb-2">
+                                                <span class="text-accent-700 font-bold">14:00</span>
+                                                <span class="px-3 py-1 bg-accent-100 text-accent-700 text-xs font-semibold rounded-full animate-pulse">Pendiente</span>
+                                            </div>
+                                            <p class="font-bold text-gray-900">Omeprazol 20mg</p>
+                                            <p class="text-sm text-gray-500">1 cápsula antes de comer</p>
+                                            <button class="mt-3 w-full bg-gradient-to-r from-accent-500 to-accent-600 text-white py-3 rounded-xl text-sm font-bold shadow-lg">
+                                                Marcar como tomado
+                                            </button>
+                                        </div>
+
+                                        <div class="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-2xl p-4">
+                                            <div class="flex items-center justify-between mb-2">
+                                                <span class="text-orange-700 font-bold flex items-center gap-1">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                                                    Alerta
+                                                </span>
+                                            </div>
+                                            <p class="font-bold text-gray-900">Stock bajo</p>
+                                            <p class="text-sm text-gray-500">Metformina: quedan 5 días</p>
+                                            <button class="mt-3 w-full border-2 border-orange-300 text-orange-700 py-2.5 rounded-xl text-sm font-bold hover:bg-orange-50">
+                                                Solicitar reposición
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Adherence -->
+                                    <div class="mt-6 bg-white rounded-2xl p-5 shadow-lg border border-gray-100">
+                                        <div class="flex justify-between items-center mb-3">
+                                            <span class="font-bold text-gray-900">Adherencia mensual</span>
+                                            <span class="text-2xl font-extrabold text-primary-600">94%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-100 rounded-full h-3">
+                                            <div class="bg-gradient-to-r from-primary-500 to-primary-400 h-3 rounded-full" style="width: 94%"></div>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-2">Excelente cumplimiento del tratamiento</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="order-1 lg:order-2 reveal" style="animation-delay: 0.2s;">
+                    <span class="inline-block px-5 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-semibold mb-6">
+                        Sistema de Recordatorios
+                    </span>
+                    <h2 class="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-8 leading-tight">
+                        Nunca olvides tu <span class="gradient-text">medicación</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-10 leading-relaxed">
+                        Sistema inteligente que te recuerda cada toma, controla tu adherencia
+                        y te avisa cuando tu stock está bajo. Fidelización automática.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="space-y-6">
+                        <div class="flex gap-5 p-5 bg-white rounded-2xl shadow-soft border border-gray-100 hover:border-primary-200 transition-colors">
+                            <div class="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg mb-1">Recordatorios personalizados</h4>
+                                <p class="text-gray-600">Configura horarios exactos según tu rutina diaria</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5 p-5 bg-white rounded-2xl shadow-soft border border-gray-100 hover:border-accent-200 transition-colors">
+                            <div class="w-14 h-14 bg-gradient-to-br from-accent-100 to-accent-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-7 h-7 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg mb-1">Reportes de adherencia</h4>
+                                <p class="text-gray-600">Visualiza tu cumplimiento y compártelo con tu médico</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5 p-5 bg-white rounded-2xl shadow-soft border border-gray-100 hover:border-orange-200 transition-colors">
+                            <div class="w-14 h-14 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg mb-1">Alertas de stock</h4>
+                                <p class="text-gray-600">Te avisamos cuando queden pocos días de medicación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section Premium -->
+    <section class="py-28 lg:py-36 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary-600/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center relative z-10 reveal">
+            <span class="inline-block px-5 py-2 bg-white/10 backdrop-blur rounded-full text-sm font-semibold mb-8 border border-white/10">
+                Paco, esto es para ti
+            </span>
+            <h2 class="text-4xl lg:text-6xl font-extrabold mb-8 leading-tight">
+                Tu farmacia, <span class="text-primary-400">al siguiente nivel</span>
+            </h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Imagina que tus clientes reciben recordatorios automáticos de sus medicinas,
+                que pueden consultar stock a las 3 de la mañana, y que tú reduces las llamadas repetitivas.
+                Todo integrado con Farmatic, sin complicaciones.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-5 justify-center mb-20">
+                <a href="https://wa.me/34600000000?text=Hola%20Emilio,%20me%20interesa%20la%20propuesta%20de%20la%20web" class="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-10 py-5 rounded-full font-bold text-lg shadow-2xl shadow-primary-500/30 hover:shadow-primary-500/50 hover:scale-105 transition-all duration-300">
+                    Hablamos cuando quieras
+                </a>
+            </div>
+
+            <!-- Stats Premium -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+                <div class="p-6 bg-white/5 backdrop-blur rounded-2xl border border-white/10">
+                    <p class="text-5xl font-extrabold text-primary-400 mb-2">24/7</p>
+                    <p class="text-gray-400 font-medium">Asistente IA</p>
+                </div>
+                <div class="p-6 bg-white/5 backdrop-blur rounded-2xl border border-white/10">
+                    <p class="text-5xl font-extrabold text-green-400 mb-2">+30%</p>
+                    <p class="text-gray-400 font-medium">Adherencia</p>
+                </div>
+                <div class="p-6 bg-white/5 backdrop-blur rounded-2xl border border-white/10">
+                    <p class="text-5xl font-extrabold text-orange-400 mb-2">-40%</p>
+                    <p class="text-gray-400 font-medium">Menos llamadas</p>
+                </div>
+                <div class="p-6 bg-white/5 backdrop-blur rounded-2xl border border-white/10">
+                    <p class="text-5xl font-extrabold text-purple-400 mb-2">100%</p>
+                    <p class="text-gray-400 font-medium">Integrado Farmatic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section Premium -->
+    <section id="contacto" class="py-28 lg:py-36 relative overflow-hidden">
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-100/50 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Info -->
+                <div class="reveal">
+                    <span class="inline-block px-5 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-6">
+                        Contacto
+                    </span>
+                    <h2 class="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-8 leading-tight">
+                        Encuéntranos en <span class="gradient-text">Tomelloso</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-12 leading-relaxed">
+                        Visítanos o contáctanos por cualquier vía. Estamos aquí para cuidarte.
+                    </p>
+
+                    <!-- Contact cards -->
+                    <div class="space-y-5">
+                        <div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft border border-gray-100 hover:border-primary-200 hover:shadow-lg transition-all">
+                            <div class="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Dirección</h4>
+                                <p class="text-gray-600">Calle Concordia 41<br>13700 Tomelloso (Ciudad Real)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft border border-gray-100 hover:border-accent-200 hover:shadow-lg transition-all">
+                            <div class="w-14 h-14 bg-gradient-to-br from-accent-100 to-accent-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-7 h-7 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Horario</h4>
+                                <p class="text-gray-600">Lunes a Viernes: 9:30 - 21:30<br>Sábados: 2 al mes (aleatorios)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft border border-gray-100 hover:border-purple-200 hover:shadow-lg transition-all">
+                            <div class="w-14 h-14 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Teléfonos</h4>
+                                <p class="text-gray-600">926 511 079 / 680 210 657<br>contacto@farmaciatejado.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="reveal" style="animation-delay: 0.2s;">
+                    <div class="rounded-3xl overflow-hidden min-h-[500px] shadow-2xl border border-gray-200">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.162604857331!2d-3.028240810294932!3d39.14828309862891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fdd373e819bb%3A0x2133fc8ecd906524!2sFarmacia%20Francisco%20Tejado%20Abeng%C3%B3zar!5e0!3m2!1ses!2ses!4v1768735802239!5m2!1ses!2ses" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3xl"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Premium -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-gray-800">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="logo.png" alt="Farmacia Francisco Tejado" class="h-14 w-auto">
+                        <div>
+                            <span class="text-white font-bold text-lg">Farmacia</span>
+                            <span class="text-primary-400 font-bold text-lg"> Francisco Tejado</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Tu farmacia de confianza en Tomelloso. 5 años cuidando de ti y tu familia.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/farmaciatejado" target="_blank" class="w-11 h-11 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Enlaces</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#servicios" class="hover:text-primary-400 transition-colors">Servicios</a></li>
+                        <li><a href="#ia" class="hover:text-primary-400 transition-colors">Asistente IA</a></li>
+                        <li><a href="#recordatorios" class="hover:text-primary-400 transition-colors">Recordatorios</a></li>
+                        <li><a href="#contacto" class="hover:text-primary-400 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contacto</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                            <span>Calle Concordia 41<br>13700 Tomelloso</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            <span>926 511 079</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Schedule -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Horario</h4>
+                    <ul class="space-y-4">
+                        <li>Lunes a Viernes<br><span class="text-primary-400 font-semibold">9:30 - 21:30</span></li>
+                        <li>Sábados<br><span class="text-primary-400 font-semibold">2 al mes (aleatorios)</span></li>
+                        <li class="pt-2"><a href="https://entomelloso.com/servicios/farmacias-de-guardia-en-tomelloso/" target="_blank" class="text-sm text-primary-400 hover:text-primary-300 transition-colors flex items-center gap-1">Ver farmacias de guardia <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-500">© 2026 Farmacia Francisco Tejado. Todos los derechos reservados.</p>
+                <p class="text-sm text-gray-500">Demo creada por:  <a href="https://romantech.es/" target="_blank" class="text-primary-400 font-semibold hover:text-primary-300 transition-colors"> Román Tech</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button Premium -->
+    <a href="https://wa.me/34680210657?text=Hola,%20me%20gustaría%20información%20sobre%20la%20farmacia" target="_blank" class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-2xl shadow-green-500/40 flex items-center justify-center group hover:scale-110 transition-all duration-300">
+        <span class="absolute w-full h-full bg-green-500 rounded-full animate-pulse-ring"></span>
+        <svg class="w-8 h-8 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Chat Widget Premium -->
+    <div id="chatWidget" class="chat-widget bg-white">
+        <div class="bg-gradient-to-r from-primary-600 to-primary-700 p-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold text-white">Asistente Farmacia Tejado</p>
+                    <p class="text-sm text-primary-200 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        En línea
+                    </p>
+                </div>
+            </div>
+            <button onclick="toggleChat()" class="text-white/80 hover:text-white p-2 hover:bg-white/10 rounded-full transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="p-5 bg-gray-50 h-72 overflow-y-auto">
+            <div class="flex gap-3 mb-4">
+                <div class="w-9 h-9 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                    </svg>
+                </div>
+                <div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm max-w-[85%]">
+                    <p class="text-gray-700">¡Hola! Soy el asistente virtual de Farmacia Francisco Tejado. ¿En qué puedo ayudarte hoy?</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 border-t bg-white">
+            <div class="flex gap-3">
+                <input type="text" placeholder="Escribe tu mensaje..." class="flex-1 px-5 py-3 bg-gray-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition-all">
+                <button class="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center text-white hover:shadow-lg transition-all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle chat
+        function toggleChat() {
+            document.getElementById('chatWidget').classList.toggle('active');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll reveal
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // Mobile menu (placeholder)
+        function toggleMobileMenu() {
+            alert('Menú móvil - Se implementará en versión final');
+        }
+    </script>
+
+</body>
+</html>
